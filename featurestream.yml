@@ -1,0 +1,12 @@
+localMode: false
+AWSSecretKey: secret_key
+AWSAccessKey: access_key
+sparkMaster: local[4] or spark master URI, eg mesos://ec2-192.124.133-amazonaws-1.com:5050
+dataPath: fs-data
+mungioJar: path to spark jar, accessible on all workers
+sparkHome: path to spark, accessible on all workers, eg /root/spark
+hdfsURL: file:///
+http:
+  port: 8088 # dropwizard http port
+  adminPort: 8089
+  rootPath: /mungio/*

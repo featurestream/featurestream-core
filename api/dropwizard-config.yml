@@ -1,0 +1,25 @@
+configPath: featurestream.yml
+http:
+  port: 8088
+  adminPort: 8089
+  rootPath: /featurestream/*
+  requestLog:
+    console:
+      enabled: true
+    file:
+      enabled: true
+      threshold: ALL
+      currentLogFilename: ./logs/featurestream-out.log
+      archivedLogFilenamePattern: ./logs/featurestream-out-%d.log.gz
+      archivedFileCount: 10
+logging:
+  console:
+    enabled: true
+  file:
+    enabled: true
+    threshold: ALL
+    currentLogFilename: ./logs/featurestream.log
+    archivedLogFilenamePattern: ./logs/featurestream-%d.log.gz
+    archivedFileCount: 10
+    timeZone: UTC
+

@@ -1,0 +1,12 @@
+localMode: true
+AWSAccessKey: xxx
+AWSSecretKey: xxx
+sparkMaster: spark master URI, eg mesos://ec2-192.124.133-amazonaws-1.com:5050
+dataPath: fs-data
+jar: path to jar, accessible on all workers, eg /root/featurestream/featurestream-spark-1.0-SNAPSHOT.jar
+sparkHome: path to spark, accessible on all workers, eg /root/spark
+hdfsURL: file:///
+http:
+  port: 8088 # dropwizard http port
+  adminPort: 8089
+  rootPath: /featurestream/*
