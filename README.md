@@ -1,5 +1,7 @@
 http://featurestream.io is a service that consumes JSON events, incrementally builds a predictive model and provides a simple prediction API. It can also do things like anomaly detection. We'll use the python library in this guide.  If you have any problems, comments or questions, contact us at [hello@featurestream.io](mailto:hello@featurestream.io)
 
+A high-level writeup of the approach can be found here: https://medium.com/@andytwigg/featurestream-io-random-forests-6992b03b521
+
 # REST API
 
 We currently expose a REST API at http://api.featurestream.io:8088/api, which supports the following major operations (in addition to a few less interesting ones):
